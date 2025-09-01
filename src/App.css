@@ -1,59 +1,95 @@
 /* App.css */
 
 body {
-  font-family: Arial, sans-serif;
-  background: #adadff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
 .App {
-  background: #ffffff;
+  background: #fff;
   padding: 40px 30px;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   text-align: center;
-  width: 350px;
+  width: 400px;
 }
 
 h1 {
-  color: #000000;
-  margin-bottom: 20px;
-  font-size: 2rem;
+  color: #333;
+  margin-bottom: 25px;
 }
 
 h2 {
-  color: #000000;
+  color: #111;
   margin-bottom: 20px;
-   font-size: 2rem;
+}
+
+h3 {
+  margin-top: 30px;
+  color: #444;
 }
 
 button {
   background-color: #6c63ff;
-  color: #000000;
-  font-weight: bold;
+  color: #fff; /* Button text color */
   border: none;
   padding: 12px 20px;
   margin: 8px 0;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-  transition: all 0.3s ease;
   width: 100%;
-  font-size: 2rem;
+  transition: all 0.3s ease;
 }
 
 button:hover {
   background-color: #5751d9;
 }
 
-p {
-  font-size: 20px;
-  color: #000000;
-  margin-top: 20px;
+/* Restart Button */
+.restart-btn {
+  background-color: #ff6584;
+  margin-top: 25px;
 }
 
+.restart-btn:hover {
+  background-color: #e0486f;
+}
 
+/* Review List */
+/* Review List */
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+li strong {
+  color: #111;       /* Darker question text */
+  font-weight: 600;   /* Slightly bolder */
+  display: block;
+  margin-bottom: 5px;
+}
+
+li span.correct {
+  color: green;
+  font-weight: 500;
+}
+
+li span.wrong {
+  color: red;
+  font-weight: 500;
+}
